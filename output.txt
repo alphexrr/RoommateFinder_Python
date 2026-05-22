@@ -1,0 +1,161 @@
+```text
+========================================================
+TEST CASE 1 – REGISTRATION OF A STUDENT
+========================================================
+
+==================================================
+  RoomieFind  –  Student PG Finder
+==================================================
+  Loaded 2 student record(s).
+
+  MENU
+  1. Browse all students
+  2. Search / Filter
+  3. Register (add yourself)
+  4. Get recommendations
+  5. Update roommate-found status
+  6. Save & Exit
+
+  Your choice: 3
+
+── Register New Student ──────────────────
+  Full Name       : Rahul Sharma
+  College/Univ    : VNR VJIET
+
+  College Year:
+    1. 1st Year
+    2. 2nd Year
+    3. 3rd Year
+    4. 4th Year
+    5. PG/Masters
+
+  Choose (1-5): 2
+
+  Preferred Area (Hyderabad):
+    1. Gachibowli
+    2. Hitech City
+    3. Madhapur
+    4. Kondapur
+    5. Kukatpally
+
+  Choose (1-15): 1
+
+  Monthly Budget  : 9000
+
+  Gender: 1.Male  2.Female  3.Other
+  Choose (1-3): 1
+
+  Short Bio       : Friendly and clean roommate
+  Contact Email   : rahul@gmail.com
+
+  Rahul Sharma added! ID: STU003
+  Data saved to 'students.txt'
+
+
+========================================================
+TEST CASE 2 – BROWSING ALL STUDENTS
+========================================================
+
+  Your choice: 1
+
+  --------------------------------------------------------------
+  NAME                 AREA             BUDGET  YEAR         STATUS
+  --------------------------------------------------------------
+  Rahul Sharma         Gachibowli      Rs  9000  2nd Year    >> Looking
+  Priya Reddy          Madhapur        Rs 10000  3rd Year    >> Looking
+  Arjun Mehta          Kondapur        Rs  8500  2nd Year    ** Found
+  --------------------------------------------------------------
+  Total: 3 student(s)
+
+
+========================================================
+TEST CASE 3 – RECOMMENDATION SYSTEM
+========================================================
+
+  Your choice: 4
+
+  Student list:
+  [STU001] Rahul Sharma
+  [STU002] Priya Reddy
+  [STU003] Arjun Mehta
+
+  Enter ID: STU001
+
+  Top matches for Rahul Sharma:
+
+  [########..] 80% match
+  Name   : Arjun Mehta  (CBIT)
+  Area   : Gachibowli  Budget: Rs.8500/mo
+  Year   : 2nd Year  Gender: Male
+  Contact: arjun@gmail.com
+
+  [######....] 60% match
+  Name   : Priya Reddy  (JNTUH)
+  Area   : Madhapur  Budget: Rs.10000/mo
+  Year   : 3rd Year  Gender: Female
+  Contact: priya@gmail.com
+
+
+========================================================
+TEST CASE 4 – SEARCH/FILTER STUDENTS
+========================================================
+
+  Your choice: 2
+
+── Filter Students ───────────────────────
+  (Press Enter to skip any filter)
+
+  Area (Hyderabad):
+    1. Gachibowli
+    2. Hitech City
+    3. Madhapur
+    4. Kondapur
+
+  Choose: 1
+
+  Gender: 1.Male  2.Female  3.Other  [Enter=any]
+  Choose: 1
+
+  Year:
+    1. 1st Year
+    2. 2nd Year
+    3. 3rd Year
+    4. 4th Year
+    5. PG/Masters
+
+  Choose (or Enter): 2
+
+  Min Budget (Rs) : 8000
+  Max Budget (Rs) : 10000
+
+  Status: 1.Looking  2.Found  [Enter=all]
+  Choose: 1
+
+  Results (1 match(es)):
+
+  --------------------------------------------------------------
+  NAME                 AREA             BUDGET  YEAR         STATUS
+  --------------------------------------------------------------
+  Rahul Sharma         Gachibowli      Rs  9000  2nd Year    >> Looking
+  --------------------------------------------------------------
+  Total: 1 student(s)
+
+
+========================================================
+TEST CASE 5 – UPDATE STATUS
+========================================================
+
+  Your choice: 5
+
+  [STU001] Rahul Sharma -- >> looking
+  [STU002] Priya Reddy -- >> looking
+  [STU003] Arjun Mehta -- >> looking
+
+  Enter student ID: STU001
+
+  New status: 1.Looking  2.Found
+  Choose: 2
+
+  Rahul Sharma status updated to 'found'
+  Data saved to 'students.txt'
+```
