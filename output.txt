@@ -157,4 +157,3 @@ TEST CASE 5 – UPDATE STATUS
 
   Rahul Sharma status updated to 'found'
   Data saved to 'students.txt'
-```
